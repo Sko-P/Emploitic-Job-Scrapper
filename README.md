@@ -10,5 +10,6 @@ Steps to use this scrapper :
 pip install requirements.txt
 ```
 
+**NOTE:**The webdriver of the web browser you are using is <ins>**mandatory**</ins> for the functionnality of **Selenium**. Make sure to download that and to set its path as an argument for the <ins>emploi</ins> emploi object you'll initialize to use its main.
 
-* 
+  
