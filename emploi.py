@@ -1,10 +1,6 @@
 #This scraps emploitic jobs
-#Voyons voir
-import requests
-import time
-from bs4 import BeautifulSoup as bs
+
 from selenium.webdriver.common.by import By 
-#from test cases
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -18,14 +14,13 @@ class emploi():
     def main(self, job):
         self.fetch_get(job)
         
-        
 
     def fetch_get(self,job):
         jo = job
         if ' ' in job : jo = self.space_formatting(job)
         self.browser.get('https://www.emploitic.com/offres-d-emploi?t[0]=location-6&q='+ jo)
         a = self.browser.page_source
-
+        jobs = []
         if("désolés" in a): 
             print("No jobs")
         else:
@@ -36,7 +31,7 @@ class emploi():
             else:
                 elem.pop(0)
                 
-            jobs = [] #To return
+             #To return
             with open('list.txt',"w",encoding="utf-8") as f:
                 for l in elem:
                     jobs.append(l.text)
@@ -58,6 +53,10 @@ class emploi():
                 jo += job[i] 
         return jo
 
-webdri = 'C:\\Users\\pc1\\Downloads\\chromedriver_win32\\chromedriver'
-a = emploi(webdri)
-a.main("python")
+
+''' EXEMPLE
+if __name__ == "__main__":
+    webdri = 'C:\\Users\\pc1\\Downloads\\chromedriver_win32\\chromedriver'
+    a = emploi(webdri)
+    a.main("python")
+'''
