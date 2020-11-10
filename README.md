@@ -1,7 +1,10 @@
 # Emploitic-Job-Scrapper
 
+
 ## Description 
-Scraps the job offers available when entering a specefic keyword.  
+Scraps the job offers available for a specefic keyword from Emploitic.com
+
+![Emploitic Logo](https://ibb.co/cX91Fkg)
 
 **Selenium** is used to scrap the website. 
 
@@ -35,7 +38,7 @@ jobs = a.main("python") #returns a list of jobs related to "python" in string fo
 jobs = a.main("python")
 print(jobs)
 ```
-Result in terminal :
+Result in terminal (As of November 2020) :
 ```bash
 DevTools listening on ws://127.0.0.1:53682/devtools/browser/0cb053a0-b5c4-45b5-a8ff-332f20320503
 Développeur Python
@@ -55,7 +58,8 @@ Développeur Fullstack (systèmes embarqués /AI)
 Ingénieur Développement Front-End & Back-End
 Ingénieur intégration Systèmes embarqués
 ```
-
+## DISCLAIMER
+This solution is not provided by Emploitic nor one of its employees 
 
 ## Contact
 mail : kmedelbachir@gmail.com
