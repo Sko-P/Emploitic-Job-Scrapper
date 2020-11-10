@@ -4,7 +4,7 @@
 ## Description 
 Scraps the job offers available for a specefic keyword from Emploitic.com
 
-![Emploitic Logo](https://ibb.co/cX91Fkg)
+![Emploitic Logo](https://i.ibb.co/Lhy8tYk/logo-emploitic-rs.png)
 
 **Selenium** is used to scrap the website. 
 
