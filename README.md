@@ -59,7 +59,7 @@ Ingénieur Développement Front-End & Back-End
 Ingénieur intégration Systèmes embarqués
 ```
 ## DISCLAIMER
-This solution is not provided by Emploitic nor one of its employees 
+This solution is **NOT** provided by Emploitic nor one of its employees 
 
 ## Contact
 mail : kmedelbachir@gmail.com
