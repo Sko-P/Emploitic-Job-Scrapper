@@ -12,7 +12,7 @@ Steps to use this scrapper :
 * Install the requirements : 
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 **NOTE:** The webdriver of the web browser you are using is <ins>**mandatory**</ins> for the functionnality of **Selenium**. Make sure to download that and to set its path as an argument for the <ins>emploi</ins> object you'll initialize in your file (See steps below).
